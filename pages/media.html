@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>COFFEE BOYS</title>
+</head>
+
+<body>
+    <header>
+        <div class="cover">
+            <img src="../media/img/cover2.jpg" alt="coffee boys">
+        </div>
+        <h1>COFFEE BOYS</h1>
+        <h2>
+            <hr>Banda tributo a BLUR
+            <hr>
+        </h2>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOn()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <h2>MENU</h2>
+                    <li><a href="../index.html" disabled>Inicio</a></li>
+                    <li><a href="./pages/media.html">Media</a></li>
+                    <li><a href="./pages/futuros.html">Proximos Eventos</a></li>
+                    <li><a href="./pages/pasados.html">Eventos Anteriores</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <section class="cont-section">
+            <div class="img-section img-media">
+                <h3>MEDIA</h3>
+            </div>
+            <div class="img-section img-next">
+                <h3>PROXIMOS EVENTOS</h3>
+            </div>
+            <div class="img-section img-prev">
+                <h3>EVENTOS PASADOS</h3>
+            </div>
+            <div class="img-section img-contact">
+                <h3>CONTACTO</h3>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <h4>SIGUENOS:</h4>
+        <div class="redes">
+            <a href="https://es-la.facebook.com/" target="_blank">FACEBOOK</a>
+            <a href="https://www.instagram.com/coffeeboys_blur/" target="_blank">INSTAGRAM</a>
+            <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+        </div>
+        <hr>
+        <h5>© Todos los derechos reservados</h5>
+    </footer>
+    <script>
+        function menuOn() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+        }
+    </script>
+
+</body>
+
+</html>
