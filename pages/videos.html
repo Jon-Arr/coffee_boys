@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>COFFEE BOYS</title>
+</head>
+
+<body>
+    <header>
+        <div class="cover">
+            <img src="../media/img/cover2.jpg" alt="coffee boys">
+        </div>
+        <h1>coffee boys</h1>
+        <h2>VIDEOS</h2>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOn()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="../index.html" disabled>Inicio</a></li>
+                    <li><a href="imagenes.html">Imagenes</a></li>
+                    <li><a href="videos.html" disabled="disabled">Videos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>
+        <section class="cont-section">
+            <div class="video">
+                <video class="vid" src="../media/vid/vid1.mp4" controls></video>
+                <video class="vid" src="../media/vid/vid2.mp4" controls></video>
+                <video class="vid" src="../media/vid/vid3.mp4" controls></video>
+                <video class="vid" src="../media/vid/vid4.mp4" controls></video>
+                <video class="vid" src="../media/vid/vid1v.mp4" controls></video>
+                <video class="vid" src="../media/vid/vid2v.mp4" controls></video>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <h4>SIGUENOS EN:</h4>
+        <div class="redes">
+            <a href="https://www.instagram.com/coffeeboys_blur/" target="_blank"><i class="bi bi-instagram"></i>coffeeboys_blur</a>
+        </div>
+        <hr>
+        <h5>© Todos los derechos reservados</h5>
+    </footer>
+
+    <script>
+        function menuOn() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+        }
+    </script>
+
+</body>
+
+</html>

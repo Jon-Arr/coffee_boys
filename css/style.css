@@ -216,7 +216,7 @@ footer hr{
     width: 80%;
 }
 
-/*====================MEDIA=====================*/
+/*====================IMAGENES=====================*/
 
 .galeria{
     width: 100%;
@@ -286,4 +286,24 @@ footer hr{
 }
 .img9{
     background-image: url('../media/img/img9.jpg');
+}
+
+/*====================VIDEOS=====================*/
+
+.video{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+.vid{
+    width: 70%;
+    border: 6px double rgb(168, 168, 168);
+    border-radius: 80px;
+    margin: 5px 0;
+}
+.vid:hover{
+    width: 100%;
+    border-radius: 20px;
 }
