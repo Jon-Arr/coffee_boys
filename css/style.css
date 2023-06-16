@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
-    color: white;
+    color: rgb(226, 226, 226);
 }
 ul, ol{
     list-style:none;
@@ -16,7 +16,9 @@ hr{
 img{
     width: 100%;
 }
+
 /*====================INDEX=====================*/
+
 /*********************HEADER*/
 
 header{
@@ -42,10 +44,9 @@ h1{
 }
 h2{
     font-size: 1.3rem;
-}
-h2 hr{
-    margin: 7px 40px;
-    border: 2px solid rgb(56, 56, 56);
+    border-top: 3px solid rgb(161, 161, 161);
+    border-bottom: 3px solid rgb(161, 161, 161);
+    margin: 10px;
 }
 header ul{
     display: flex;
@@ -65,14 +66,17 @@ header ul{
     justify-content: center;
 }
 #menu-bar {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
+    border: 3px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 5px;
 }
 .bar {
     height: 5px;
     width: 100%;
-    background-color: #a7a7a7;
+    background-color: rgb(224, 224, 224);
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -101,7 +105,7 @@ header ul{
     display: block;
 }  
 .change .bar {
-    background-color: white;
+    background-color: rgb(224, 224, 224);
 }  
 .change #bar1 {
     transform: translateY(4px) rotateZ(-45deg);
@@ -114,6 +118,7 @@ header ul{
 }  
 
 /*********************MAIN*/
+
 .cont-section{
     display: flex;
     flex-direction: column;
@@ -121,7 +126,7 @@ header ul{
 }
 .img-section{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,6 +170,7 @@ h3 a{
 
 
 /*********************FOOTER*/
+
 footer{
     margin: 20px 20px;
     display: flex;
@@ -181,4 +187,73 @@ h4{
 }
 footer hr{
     width: 80%;
+}
+
+/*====================MEDIA=====================*/
+
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.img-gal{
+    width: 100%;
+    height: 7vh;
+    border: 2px solid rgb(184, 180, 180);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    overflow: hidden;
+}
+.img-gal:first-child{    
+    height: 40vh;
+    background-size:cover;
+    background-position: center;
+}
+.img-gal:hover{
+    height: 40vh;
+    background-size: cover;
+}
+.img-gal:hover a{
+    display: inline;
+}
+.img-gal a{
+    display: none;
+    border: 2px solid rgb(184, 180, 180);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img0{
+    background-image: url('../media/img/cover2.jpg');
+}
+.img1{
+    background-image: url('../media/img/img1.jpg');
+}
+.img2{
+    background-image: url('../media/img/img2.jpg');
+}
+.img3{
+    background-image: url('../media/img/img3.jpg');
+}
+.img4{
+    background-image: url('../media/img/img4.jpg');
+}
+.img5{
+    background-image: url('../media/img/img5.jpg');
+}
+.img6{
+    background-image: url('../media/img/img6.jpg');
+}
+.img7{
+    background-image: url('../media/img/img7.jpg');
+}
+.img8{
+    background-image: url('../media/img/img8.jpg');
+}
+.img9{
+    background-image: url('../media/img/img9.jpg');
 }
