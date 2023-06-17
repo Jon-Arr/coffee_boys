@@ -350,3 +350,22 @@ footer hr{
 .ban-past1{
     background-image: url('../media/img/ban1.jpg');
 }
+
+/*====================CONTACTO=====================*/
+
+.contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contacto h3{
+    margin: 20px 0;
+}
+.contacto a{
+    border: 2px solid rgb(184, 182, 182);
+    border-radius: 20px;
+    padding: 10px;
+}
