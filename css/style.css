@@ -10,14 +10,6 @@
     font-family: 'blur3';
     src: url('../fonts/Gaussian\ Blur.ttf');
 }
-@font-face {
-    font-family: 'blur4';
-    src: url('../fonts/TheBlurryEffect.ttf');
-}
-@font-face {
-    font-family: 'blur5';
-    src: url('../fonts/Blur\ Sight.ttf');
-}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -119,10 +111,13 @@ header ul{
 .nav li {
     list-style: none;
     padding: 12px 0;
-    font-family: 'blur4', sans-serif;
+    font-family: 'blur3', sans-serif;
 }  
 .nav li a:hover {
     font-weight: bold;
+    background-color: rgba(104, 103, 103, 0.5);
+    border-radius: 10px;
+    padding: 5px;
 }
 .change {
     display: block;
@@ -165,7 +160,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'blur4', sans-serif;
+    font-family: 'blur2', sans-serif;
 }
 h3:hover{
     background:none;
@@ -203,6 +198,7 @@ footer{
 }
 h4{
     margin-bottom: 20px;
+    font-family: 'blur3';
 }
 .redes{
     width: 100%;
@@ -306,4 +302,51 @@ footer hr{
 .vid:hover{
     width: 100%;
     border-radius: 20px;
+}
+
+/*====================EVENTOS=====================*/
+
+.banners{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banners h3{
+    border: 2px solid rgb(156, 156, 156);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 80%;
+}
+.banners a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ban{
+    width: 80%;
+    height:50vh;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px dotted rgb(156, 156, 156);
+}
+.ban-new{
+    background-image: url('../media/img/ban-new.jpg');
+    margin-bottom: 20px;
+}
+.ban-past5{
+    background-image: url('../media/img/ban5.jpg');
+}
+.ban-past4{
+    background-image: url('../media/img/ban4.jpg');
+}
+.ban-past3{
+    background-image: url('../media/img/ban3.jpg');
+}
+.ban-past2{
+    background-image: url('../media/img/ban2.jpg');
+}
+.ban-past1{
+    background-image: url('../media/img/ban1.jpg');
 }
