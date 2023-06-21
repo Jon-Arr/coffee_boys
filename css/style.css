@@ -266,7 +266,7 @@ h3 a {
 }
 
 .img-prev {
-    background-image: url('../media/img/img3.jpg');
+    background-image: url('../media/img/img1.jpg');
 }
 
 .img-contact {
@@ -284,13 +284,13 @@ h3 a {
     }
 }
 
-@media (min-width:1024px) and (max-width:1200px){
+@media (min-width:1024px) /*and (max-width:1200px)*/{
     main{        
         display: flex;
         justify-content: center;
     }
     .cont-section {
-        width: 900px;
+        width: 1000px;
         flex-direction:row;
     }
 }
@@ -312,7 +312,9 @@ h4 {
 .redes {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .redes a {
@@ -321,6 +323,14 @@ h4 {
 
 footer hr {
     width: 80%;
+}
+
+@media (min-width:420px) {
+    .redes{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+    }
 }
 
 /*====================IMAGENES=====================*/
@@ -469,11 +479,12 @@ footer hr {
     }
 }
 
-@media (min-width:1024px) and (max-width:1200px){
+@media (min-width:1024px) /*and (max-width:1200px)*/{
     .galeria {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        max-width: 1000px;
     }
     .img0{
         grid-row-start: 4;
@@ -482,13 +493,16 @@ footer hr {
     .img-gal{
         height: 100%;
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         border-radius: 50px;
-    }
-    .img-gal:first-child{
-        background-size: contain;
     }
     .img-gal:hover{
         border-radius: 100%;
+        background-size: 300%;
+    }
+    .img-gal:first-child{
+        background-size: contain;
     }
 }
 
@@ -588,5 +602,15 @@ footer hr {
 .contacto a {
     border: 2px solid rgb(184, 182, 182);
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 30px;
+    font-size: 1.5rem;    
+}
+.contact-redes i{
+    background-color: transparent;
+}
+.contacto-insta:hover{
+    background-color: rgb(245, 96, 64);
+}
+.contacto-wsp:hover{
+    background-color: rgb(9, 218, 44);
 }
