@@ -1,0 +1,40 @@
+.contacto {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    @include flexbox (flex, center, center);
+    
+    h3 {
+        margin: 20px 0;
+    }
+
+    a {
+        border: 2px solid rgb(184, 182, 182);
+        border-radius: 20px;
+        padding: 10px 30px;
+        font-size: 1.5rem;    
+    }
+
+    &-redes i{
+        background-color: transparent;
+    }
+    &-insta:hover{
+        background-color: rgb(245, 96, 64);
+    }
+    &-wsp:hover{
+        background-color: rgb(9, 218, 44);
+    }
+}
+
+@media (min-width:420px) {
+    .contacto{
+        height: 55vh;
+
+        a{
+            flex-direction: column;
+        }
+    }
+}
+
+
+
