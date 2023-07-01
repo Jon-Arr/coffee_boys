@@ -89,6 +89,10 @@ h2 {
                 background-color: rgba(104, 103, 103, 0.5);
                 border-radius: 10px;
                 padding: 5px;
+                
+                span{
+                    background-color: rgba(0, 0, 0, 0);
+                }
             }
         }
     }
@@ -100,19 +104,19 @@ h2 {
     .bar {
         background-color: rgb(224, 224, 224);
     }
+    #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+    
+    #bar2 {
+        opacity: 0;
+    }
+    
+    #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
 }
 
-.change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-}
-
-.change #bar2 {
-    opacity: 0;
-}
-
-.change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
-}
 
 @media (min-width:420px) and (max-width:1024px){
     
