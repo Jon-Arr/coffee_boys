@@ -21,6 +21,10 @@
     color: rgb(226, 226, 226);
 }
 
+a{
+    text-decoration: none;
+}
+
 ul,
 ol {
     list-style: none;
@@ -58,9 +62,41 @@ h4 {
 
 @keyframes mover-img{
     0%{
-        translate: 50px 10px;
+        transform: translatex(500px);
     }
     100%{
-        translate:0px 0px ;
+        transform: translatex(0px);
+    }
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer-abajo{
+    0%{
+        opacity: 0;
+        transform: translatey(500px);
+    }
+    75%{        
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotatex(360deg);
+    }
+    100%{        
+        transform: rotatex(0deg);
     }
 }

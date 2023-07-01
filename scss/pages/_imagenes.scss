@@ -48,38 +48,56 @@
     
     .img1 {
         background-image: url('../media/img/img1.jpg');
+        animation-name: mover-img;
+        animation-duration: 1.8s;
     }
     
     .img2 {
         background-image: url('../media/img/img2.jpg');
+        animation-name: mover-img;
+        animation-duration: 1.6s;
     }
     
     .img3 {
         background-image: url('../media/img/img3.jpg');
+        animation-name: mover-img;
+        animation-duration: 1.4s;
     }
     
     .img4 {
         background-image: url('../media/img/img4.jpg');
+        animation-name: mover-img;
+        animation-duration: 1.2s;
     }
     
     .img5 {
         background-image: url('../media/img/img5.jpg');
+        animation-name: mover-img;
+        animation-duration: 1.0s;
     }
     
     .img6 {
         background-image: url('../media/img/img6.jpg');
+        animation-name: mover-img;
+        animation-duration: 0.8s;
     }
     
     .img7 {
         background-image: url('../media/img/img7.jpg');
+        animation-name: mover-img;
+        animation-duration: 0.6s;
     }
     
     .img8 {
         background-image: url('../media/img/img8.jpg');
+        animation-name: mover-img;
+        animation-duration: 0.4s;
     }
     
     .img9 {
         background-image: url('../media/img/img9.jpg');
+        animation-name: mover-img;
+        animation-duration: 0.2s;
     }
 }
 
@@ -97,8 +115,6 @@
             height: 100%;
             background-size: cover;
             background-position: center;
-            animation-name: mover-img;
-            animation-duration: 3s;
 
             &:hover{
                 height: 100%;
@@ -107,47 +123,54 @@
                 transform: scale(1.2);     
                 transition: 1s;     
             }
-        }
-        
-    }
 
-    .img0{
-        grid-row: 7 / span 4;
-        grid-column: 1 / span 6;
-
-        &:hover{
-            height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;     
+            &:first-child {
+                height: 90%;
+                border-radius: 100%;
+                border:none
+            }
         }
-    }
-    .img1{
-        grid-row: 3 / span 4;
-        grid-column: 1 / span 4;
-    }
-    .img2{
-        grid-row: 9 / span 2;
-        grid-column: span 4;
-    }
-    .img3{
-        grid-row: 5 / span 4;
-        grid-column: span 4;
-    }
-    .img4{
-        grid-row: span 2;
-        grid-column: 7 / span 4;
-    }
-    .img5, .img6{
-        grid-row: 1 / span 2;
-        grid-column: span 3;
-    }
-    .img7, .img8{
-        grid-row: span 2;
-        grid-column: span 3;
-    }
-    .img9{
-        grid-row: span 2;
-        grid-column: span 2;
+
+        .img1{
+            grid-row: 3 / span 4;
+            grid-column: 1 / span 4;
+        }
+        .img2{
+            grid-row: 9 / span 2;
+            grid-column: span 4;
+        }
+        .img3{
+            grid-row: 5 / span 4;
+            grid-column: span 4;
+        }
+        .img4{
+            grid-row: span 2;
+            grid-column: 7 / span 4;
+        }
+        .img5, .img6{
+            grid-row: 1 / span 2;
+            grid-column: span 3;
+        }
+        .img7, .img8{
+            grid-row: span 2;
+            grid-column: span 3;
+        }
+        .img9{
+            grid-row: 7 / span 4;
+            grid-column: 1 / span 6;
+        }     
+        .img0{
+            grid-row: 5 / span 2;
+            grid-column: 5 / span 2;
+    
+            &:hover{
+                height: 100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                transform: scale(1); 
+                box-shadow: 10px 10px 20px rgb(184, 180, 180);
+            }
+        }   
     }
 }
 
@@ -165,8 +188,6 @@
             background-position: center;
             background-repeat: no-repeat;
             border-radius: 0px;
-            animation-name: mover-img;
-            animation-duration: 3s;
             
             &:hover{
                 background-size: 300%;

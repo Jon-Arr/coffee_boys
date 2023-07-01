@@ -9,6 +9,8 @@
         border: 6px double rgb(168, 168, 168);
         border-radius: 80px;
         margin: 5px 0;
+        animation-name: aparecer-abajo;
+        animation-duration: 1s;
 
         &:hover {
             width: 100%;

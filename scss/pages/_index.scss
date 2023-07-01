@@ -12,6 +12,11 @@
 
     @include flexbox(flex, center, center);
 
+    &:hover h3{
+        transform: rotateY(360deg);
+        transition: 0.8s;
+    }
+
     h3 {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.7);
@@ -35,18 +40,26 @@
 
 .img-media {
     background-image: url('../media/img/img7.jpg');
+    animation-name: mover-img;
+    animation-duration: 2s;
 }
 
 .img-next {
     background-image: url('../media/img/img6.jpg');
+    animation-name: mover-img;
+    animation-duration: 1.5s;
 }
 
 .img-prev {
     background-image: url('../media/img/img1.jpg');
+    animation-name: mover-img;
+    animation-duration: 1s;
 }
 
 .img-contact {
     background-image: url('../media/img/img8.jpg');
+    animation-name: mover-img;
+    animation-duration: 0.5s;
 }
 
 @media (min-width:420px) and (max-width:1024px){

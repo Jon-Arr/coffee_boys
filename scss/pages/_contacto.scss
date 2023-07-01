@@ -3,6 +3,8 @@
     flex-direction: column;
     text-align: center;
     @include flexbox (flex, center, center);
+    animation-name: rotar;
+    animation-duration: 1s;
     
     h3 {
         margin: 20px 0;
