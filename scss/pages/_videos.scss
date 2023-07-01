@@ -22,7 +22,7 @@
         @include flexbox(grid, center, center);
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4,1fr);
-        height: 100vh;
+        // height:800vh;
         gap: 20px;
 
         .vid{
