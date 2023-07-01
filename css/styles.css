@@ -620,11 +620,11 @@ footer hr {
     grid-row: 1/span 2;
     grid-column: span 3;
   }
-  .galeria .img7, .galeria .img8 {
+  .galeria .img9, .galeria .img8 {
     grid-row: span 2;
     grid-column: span 3;
   }
-  .galeria .img9 {
+  .galeria .img7 {
     grid-row: 7/span 4;
     grid-column: 1/span 6;
   }
