@@ -288,8 +288,21 @@ footer hr {
   justify-content: center;
   align-items: center;
 }
-
-.img-section {
+.cont-section .bienvenida {
+  text-align: center;
+  margin: 20px;
+  animation-name: aparecer;
+  animation-duration: 3s;
+}
+.cont-section .bienvenida h3 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.cont-section .bienvenida p {
+  font-family: "blur3", sans-serif;
+  margin-bottom: 10px;
+}
+.cont-section .img-section {
   width: 100%;
   height: 60vh;
   background-position: center;
@@ -299,45 +312,41 @@ footer hr {
   justify-content: center;
   align-items: center;
 }
-.img-section:hover h3 {
+.cont-section .img-section:hover h3 {
   transform: rotateY(360deg);
   transition: 0.8s;
 }
-.img-section h3 {
+.cont-section .img-section h3 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.img-section h3:hover {
+.cont-section .img-section h3:hover {
   background: none;
 }
-.img-section h3:hover a {
+.cont-section .img-section h3:hover a {
   border: 2px solid rgb(161, 161, 161);
 }
-.img-section h3 a {
+.cont-section .img-section h3 a {
   border-radius: 50px;
   padding: 0 10px;
   background-color: #181818;
 }
-
-.img-media {
+.cont-section .img-media {
   background-image: url("../media/img/img7.jpg");
   animation-name: mover-img;
   animation-duration: 2s;
 }
-
-.img-next {
+.cont-section .img-next {
   background-image: url("../media/img/img6.jpg");
   animation-name: mover-img;
   animation-duration: 1.5s;
 }
-
-.img-prev {
+.cont-section .img-prev {
   background-image: url("../media/img/img1.jpg");
   animation-name: mover-img;
   animation-duration: 1s;
 }
-
-.img-contact {
+.cont-section .img-contact {
   background-image: url("../media/img/img8.jpg");
   animation-name: mover-img;
   animation-duration: 0.5s;
@@ -452,6 +461,10 @@ footer hr {
   }
   .banners-titulo1, .banners-titulo2, .banners-link6 {
     grid-column: 1/span 2;
+  }
+  .banners .ban-past1 {
+    height: 60vh;
+    width: auto;
   }
 }
 @media (min-width: 1024px) {
