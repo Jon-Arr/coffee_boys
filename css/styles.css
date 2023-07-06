@@ -417,41 +417,19 @@ footer hr {
 }
 .banners a {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 .banners .ban {
-  width: 100%;
-  height: 50vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px dotted rgb(156, 156, 156);
+  height: 100%;
   animation-name: aparecer;
   animation-duration: 1s;
-}
-.banners .ban-new {
-  background-image: url("../media/img/ban-new.jpg");
-  margin-bottom: 20px;
+  border: 2px dotted rgb(156, 156, 156);
+  padding: 10px;
 }
 .banners .ban-new2 {
-  background-image: url("../media/img/ban-new2.jpg");
   margin-bottom: 20px;
-}
-.banners .ban-past5 {
-  background-image: url("../media/img/ban5.jpg");
-}
-.banners .ban-past4 {
-  background-image: url("../media/img/ban4.jpg");
-}
-.banners .ban-past3 {
-  background-image: url("../media/img/ban3.jpg");
-}
-.banners .ban-past2 {
-  background-image: url("../media/img/ban2.jpg");
-}
-.banners .ban-past1 {
-  background-image: url("../media/img/ban1.jpg");
 }
 
 @media (min-width: 420px) and (max-width: 1024px) {
@@ -461,9 +439,16 @@ footer hr {
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    justify-content: center;
+  }
+  .banners a {
+    border: 2px dotted rgb(156, 156, 156);
   }
   .banners .ban {
-    height: 50vh;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+    border: 0;
   }
   .banners-titulo1, .banners-titulo2, .banners-link6 {
     grid-column: 1/span 2;
@@ -477,11 +462,21 @@ footer hr {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
+  .banners a {
+    border: 2px dotted rgb(156, 156, 156);
+  }
   .banners .ban {
-    height: 50vh;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+    border: 0;
   }
   .banners-titulo1, .banners-titulo2, .banners-link1, .banners-link7 {
     grid-column: 1/span 3;
+  }
+  .banners .ban-new, .banners .ban-new2 {
+    height: 50vh;
+    width: fit-content;
   }
   .banners-link6 {
     grid-column: 3;
