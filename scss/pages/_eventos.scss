@@ -37,7 +37,7 @@
         grid-template-rows: auto;
         justify-content: center;
 
-        a{            
+        a {
             border: 2px dotted rgb(156, 156, 156);
         }
 
@@ -53,7 +53,8 @@
         &-link6 {
             grid-column: 1 / span 2;
         }
-        .ban-past1{
+
+        .ban-past1 {
             height: 60vh;
             width: auto;
         }
@@ -61,35 +62,35 @@
 }
 
 @media (min-width:1024px) {
-    .banners {
-        @include flexbox(grid, center, center);
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+    main .cont-section {
+        flex-direction: column;
 
-        a{            
-            border: 2px dotted rgb(156, 156, 156);
-        }
+        .banners {
+            @include flexbox(grid, center, center);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
 
-        .ban {
-            width: 100%;
-            height: fit-content;
-            align-self: center;
-            border: 0;
-        }
+            a {
+                border: 2px dotted rgb(156, 156, 156);
+            }
 
-        &-titulo1,
-        &-titulo2,
-        &-link1, &-link7{
-            grid-column: 1 / span 3;
-        }
+            .ban {
+                object-fit: contain;
+                height: 60vh;
+                align-self: center;
+                border: 0;
+            }
 
-        .ban-new, .ban-new2{
-            height: 50vh;
-            width: fit-content;
-        }
+            &-titulo1,
+            &-titulo2,
+            &-link1,
+            &-link7 {
+                grid-column: 1 / span 3;
+            }
 
-        &-link6 {
-            grid-column: 3;
+            &-link6 {
+                grid-column: 3;
+            }
         }
     }
 }

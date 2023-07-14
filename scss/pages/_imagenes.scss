@@ -29,11 +29,12 @@
         }
 
         &:hover {
-            height: 35vh;
+            height: 200px;
         }
 
         &:hover .img{
             height: 100%;
+            width: auto;            
         }
 
         &:hover a {
@@ -108,15 +109,26 @@
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(10, 1fr);
-        height: 100vh;
+        height: 120vh;
         gap: 10px;
 
         &-img {
             height: 100%;
+            background-color: black;
 
             &:hover {
                 height: 100%;
-                background-size: 200%;
+                transform: scale(1.2);
+                transition: 1s;
+            }
+            .img{                
+                height: 100%;
+                width: auto;
+            }
+
+            &:hover .img{
+                height: 100%;
+                width: auto;
                 transform: scale(1.2);
                 transition: 1s;
             }
@@ -189,12 +201,15 @@
         gap: 20px;
 
         &-img {
-            height: 100%;
-            border-radius: 0px;
-
+            height: 300px;
+            border-radius: 0px;   
+            
             .img{
-                height: 40vh;
-                width: auto;
+                height: 100%;
+            }
+
+            &:hover img{
+                height: 100%;    
             }
 
             &:hover {
@@ -203,12 +218,8 @@
                 box-shadow: 10px 10px 20px rgb(184, 180, 180);
                 transform: rotate(10deg);
                 transition: 1s;
-            }
-
-            &:hover .img{
-                height: 30vh;
-                width: auto;            
-            }
+                height: 300px;
+            }            
 
             &:first-child {
                 background-size: contain;

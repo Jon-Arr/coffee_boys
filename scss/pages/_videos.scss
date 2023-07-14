@@ -5,17 +5,12 @@
     @include flexbox (flex, center, center);
 
     .vid {
-        width: 70%;
+        width: 100%;
         border: 6px double rgb(168, 168, 168);
-        border-radius: 80px;
+        border-radius: 20px;
         margin: 5px 0;
         animation-name: aparecer-abajo;
         animation-duration: 1s;
-
-        &:hover {
-            width: 100%;
-            border-radius: 20px;
-        }
     }
 }
 
@@ -46,7 +41,6 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2,1fr);
-        height: 60vh;
         gap: 20px;
 
         .vid{
